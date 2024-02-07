@@ -13,14 +13,17 @@
 ```html
 <script
 	type="module"
-	src="https://unpkg.com/read-it/read-it.js?module=true"
+	src="https://unpkg.com/mariohamann/read-it/read-it.js?module=true"
 ></script>
 ```
 
 ### Skypack
 
 ```html
-<script type="module" src="https://cdn.skypack.dev/read-it"></script>
+<script
+	type="module"
+	src="https://cdn.skypack.dev/mariohamann/read-it"
+></script>
 ```
 
 2. Start using it!

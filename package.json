@@ -1,5 +1,5 @@
 {
-  "name": "read-it",
+  "name": "@mariohamann/read-it",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite"
