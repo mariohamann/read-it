@@ -1,13 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Read it!</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <read-it>
+      <p>Read it to me! The quick brown fox jumps over the lazy dog.</p>
+      <p data-read-it="skip">
+        This content will be skipped from reading.
+      </p>
+      <button data-read-it="play" hidden>
+        <span class="play">Play</span>
+        <span class="pause">Pause</span>
+      </button>
+      <button data-read-it="stop" hidden>Stop</button>
+    </read-it>
+
+    <style>
+			read-it[hydrated] button[data-read-it="play"],
+			read-it:is([playing], [paused]) button[data-read-it="stop"] {
+				display: block;
+			}
+
+			read-it:not([playing]) .pause,
+			read-it[playing] .play {
+				display: none;
+			}
+
+			read-it:not([playing]) .play,
+			read-it[playing] .pause {
+				display: inline-block;
+			}
+		</style>
+    <script type="module" src="/read-it.js"></script>
   </body>
 </html>

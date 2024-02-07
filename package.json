@@ -1,14 +1,26 @@
 {
-  "name": "read-it-to-me-demo",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "read-it",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite"
   },
+  "main": "read-it.js",
+  "description": "A customizable web component that will read content out to you using the web speech API.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mariohamann/read-it.git"
+  },
+  "keywords": [
+    "webcomponent",
+    "speechrec"
+  ],
   "devDependencies": {
     "vite": "^5.0.8"
-  }
+  },
+  "author": "Mario Hamann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mariohamann/read-it/issues"
+  },
+  "homepage": "https://github.com/mariohamann/read-it#readme"
 }
