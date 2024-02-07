@@ -13,7 +13,7 @@
 ```html
 <script
 	type="module"
-	src="https://unpkg.com/mariohamann/read-it/read-it.js?module=true"
+	src="https://unpkg.com/@mariohamann/read-it/read-it.js?module=true"
 ></script>
 ```
 
@@ -22,7 +22,7 @@
 ```html
 <script
 	type="module"
-	src="https://cdn.skypack.dev/mariohamann/read-it"
+	src="https://cdn.skypack.dev/@mariohamann/read-it"
 ></script>
 ```
 
